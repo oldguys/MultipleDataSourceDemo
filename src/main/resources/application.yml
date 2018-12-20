@@ -1,0 +1,23 @@
+test1:
+  datasource:
+    username: root
+    password: root
+    url: jdbc:mysql://127.0.0.1:3306/multiple_datasource1?useUnicode=true&characterEncoding=utf8&useSSL=false&allowMultiQueries=true
+    driver-class-name: com.mysql.jdbc.Driver
+    type: com.alibaba.druid.pool.DruidDataSource
+  mybatis:
+    mapper-locations: classpath:mappers/test1/*.xml
+    type-aliases-package: com.oldguy.example.modules.test1.dao.entities;
+    config-location: classpath:configs/myBatis-config.xml
+
+test2:
+  datasource:
+    username: root
+    password: root
+    url: jdbc:mysql://127.0.0.1:3306/multiple_datasource2?useUnicode=true&characterEncoding=utf8&useSSL=false&allowMultiQueries=true
+    driver-class-name: com.mysql.jdbc.Driver
+    type: com.alibaba.druid.pool.DruidDataSource
+  mybatis:
+    mapper-locations: classpath:mappers/test2/*.xml
+    type-aliases-package: com.oldguy.example.modules.test2.dao.entities;
+    config-location: classpath:configs/myBatis-config.xml
