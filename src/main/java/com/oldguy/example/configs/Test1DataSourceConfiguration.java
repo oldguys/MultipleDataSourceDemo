@@ -28,7 +28,7 @@ public class Test1DataSourceConfiguration extends AbstractMybatisConfiguration {
 
     @Bean(name = "test1DataSource")
     @ConfigurationProperties(prefix = "test1.datasource")
-    public DruidDataSource Cscms3DataSource() {
+    public DruidDataSource test1DataSource() {
         return new DruidDataSource();
     }
 
