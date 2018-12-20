@@ -1,6 +1,6 @@
 >在 SpringBoot 项目中，可能需要使用 MyBatis 对不同数据库进行操作，而SpringBoot默认配置只是使用单数据源。
 >本文主要描述如何配置 SpringBoot 多数据源 MyBatis。
-> github:[https://github.com/oldguys/MultipleDataSourceDemo](https://github.com/oldguys/MultipleDataSourceDemo)
+> GitHub  [https://github.com/oldguys/MultipleDataSourceDemo](https://github.com/oldguys/MultipleDataSourceDemo)
 
 
 Step1: 排除自动装配。
@@ -260,3 +260,5 @@ test2:
 
 ```
 
+到此完成了MyBatis多数据源配置
+代码可以参考   GitHub  [https://github.com/oldguys/MultipleDataSourceDemo](https://github.com/oldguys/MultipleDataSourceDemo)
