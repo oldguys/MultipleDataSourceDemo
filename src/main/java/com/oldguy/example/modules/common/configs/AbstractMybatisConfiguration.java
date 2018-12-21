@@ -24,7 +24,7 @@ public abstract class AbstractMybatisConfiguration {
      * @param sqlSessionFactory
      * @return
      */
-    protected SqlSessionTemplate getSqlSessionTemplate(@Qualifier("cscms2Properties") MybatisProperties properties, @Qualifier("cscms2SqlSessionFactory") SqlSessionFactory sqlSessionFactory) {
+    protected SqlSessionTemplate getSqlSessionTemplate(MybatisProperties properties, SqlSessionFactory sqlSessionFactory) {
         ExecutorType executorType = properties.getExecutorType();
         if (executorType != null) {
             return new SqlSessionTemplate(sqlSessionFactory, executorType);
