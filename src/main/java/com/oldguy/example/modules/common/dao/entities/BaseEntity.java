@@ -5,6 +5,7 @@ package com.oldguy.example.modules.common.dao.entities;
 
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
+import javax.persistence.MappedSuperclass;
 import java.util.Date;
 
 /**
@@ -12,7 +13,8 @@ import java.util.Date;
  * @author ren
  * @date 2018/12/20
  */
-public abstract class BaseEntity {
+@MappedSuperclass
+public class BaseEntity {
 
     @Id
     @GeneratedValue

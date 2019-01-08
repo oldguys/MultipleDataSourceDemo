@@ -12,9 +12,14 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class TestController {
 
-
+    /**
+     *  MyBatis 数据库2
+     */
     @Autowired
     private TestEntity2Mapper testEntity2Mapper;
+    /**
+     *  MyBatis 数据库1
+     */
     @Autowired
     private TestEntity1Mapper testEntity1Mapper;
 

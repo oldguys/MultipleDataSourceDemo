@@ -1,3 +1,7 @@
+server:
+  port: 8081
+
+
 test1:
   datasource:
     username: root
@@ -21,3 +25,30 @@ test2:
     mapper-locations: classpath:mappers/test2/*.xml
     type-aliases-package: com.oldguy.example.modules.test2.dao.entities;
     config-location: classpath:configs/myBatis-config.xml
+
+
+test3:
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+    base-package: com.oldguy.example.modules.test3.dao.entities
+  datasource:
+    url: jdbc:mysql://127.0.0.1:3306/multiple_datasource3?useUnicode=true&characterEncoding=utf8&useSSL=false&allowMultiQueries=true
+    username: root
+    password: root
+    driver-class-name: com.mysql.jdbc.Driver
+    type: org.apache.tomcat.jdbc.pool.DataSource
+
+test4:
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+    base-package: com.oldguy.example.modules.test4.dao.entities
+  datasource:
+    url: jdbc:mysql://127.0.0.1:3306/multiple_datasource4?useUnicode=true&characterEncoding=utf8&useSSL=false&allowMultiQueries=true
+    username: root
+    password: root
+    driver-class-name: com.mysql.jdbc.Driver
+    type: org.apache.tomcat.jdbc.pool.DataSource
